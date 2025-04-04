@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://kit.fontawesome.com/50399b211c.js" crossorigin="anonymous"></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
   <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/variables.css">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +16,39 @@
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <div class="header-container">
+        <img src="src/images/logo.svg" alt="Huddle logo">
+      </div>
+    </header>
 
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-image">
+          <img src="src/images/illustration-mockups.svg" alt="Mockup of Huddle app">
+        </div>
+        <div class="hero-text">
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+            Create connections with your users as you engage in genuine discussion.</p>
+          <button class="btn">Register</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="socials">
+        <a href="">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

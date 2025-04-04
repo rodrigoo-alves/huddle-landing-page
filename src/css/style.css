@@ -1,0 +1,142 @@
+html {
+  color: #fff;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url('../images/bg-desktop.svg') no-repeat;
+  background-color: var(--primary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-left: 80px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin-top: 40px;
+}
+
+.header .header-container {
+  margin-bottom: 30px;
+}
+
+.hero .hero-container {
+  display: flex;
+  margin-top: 40px;
+}
+
+.hero .hero-container .hero-text {
+  margin: 40px;
+}
+
+.hero .hero-container .hero-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hero .hero-container .hero-text p {
+  margin-top: 20px;
+  width: 520px;
+}
+
+.hero .hero-container .hero-text .btn {
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  width: 190px;
+  height: 60px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.hero .hero-container .hero-text .btn:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.footer .socials i {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.footer .socials a {
+  margin: 0 5px;
+}
+
+/* .footer .socials i:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+} */
+
+.footer .socials i:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .header .header-container img {
+    width: 150px;
+  }
+
+  .hero .hero-container {
+    flex-direction: column;
+  }
+
+  .hero .hero-container .hero-image img {
+    width: 300px;
+  }
+
+  .hero .hero-container .hero-text {
+    text-align: center;
+    margin: 0;
+  }
+
+  .hero .hero-container .hero-text h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+
+  .hero .hero-container .hero-text p {
+    width: auto;
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+
+
